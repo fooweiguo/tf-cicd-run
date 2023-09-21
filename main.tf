@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "example" {
   bucket = "my-tf-test-bucket3-NEW-X"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My buckett"
     Environment = "Dev"
   }
 }
@@ -15,7 +15,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "sctp-ce3-tfstate-bucket"
+    bucket = "sctp-ce3-tfstate-bucket-1"
     region = "us-east-1"
     key    = "jon.tfstate"
   }
